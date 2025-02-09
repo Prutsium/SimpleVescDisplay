@@ -1,8 +1,11 @@
 # 🚀 Simple VESC Display for ESP32-2432S028R
 
 > **Credits:** Based on the original project by [Gh0513d/SVD](https://github.com/Gh0513d/SVD) 🔗
+> **Credits:** Based on Netwrokdir version https://github.com/NetworkDir/SimpleVescDisplay
+
 
 This is a modified version of the VESC display project, optimized for the **ESP32-2432S028R** display. The goal is to enhance functionality and add new features while keeping it simple and efficient.
+* Additional parts have been optimized with the help of Jason for high speed / high current scooters
 
 ## 🎨 Demo
 
