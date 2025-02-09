@@ -276,7 +276,7 @@ void loop() {
 	  tft.setFreeFont(DATAFONTSMALL2);
 	  Data10.setTextColor(TFT_WHITE, TFT_BLACK);
 	  tft.setCursor(270, 25);
-	  dtostrf(watts, 3, 0, fmt);
+	  dtostrf(watts, 5, 0, fmt);
 	  Data10.print(fmt);
 	
 	  tft.setCursor	(270, 30);
@@ -292,7 +292,7 @@ void loop() {
 	  tft.setFreeFont(DATAFONTSMALL2);
 	  Data10.setTextColor(ERROR_WARNING_COLOR, TFT_BLACK);
 	  tft.setCursor(270, 25);
-	  dtostrf(UART.data.error, 2, 0, fmt);
+	  dtostrf(UART.data.error, 5, 0, fmt);
 	  Data10.print(fmt);
 				
 	  tft.setCursor(270, 30);
@@ -306,7 +306,7 @@ void loop() {
   tft.setCursor(270, 220);
   tft.setFreeFont(DATAFONTSMALL);
   Data6.setTextColor(TFT_GREEN, TFT_BLACK);
-  dtostrf(UART.data.avgMotorCurrent, 2, 0, fmt);
+  dtostrf(UART.data.avgMotorCurrent, 3, 0, fmt);
   Data6.print(fmt);
 
   tft.setCursor(265, 235);
@@ -319,7 +319,7 @@ void loop() {
   tft.setCursor(220, 220);
   tft.setFreeFont(DATAFONTSMALL);
   Data7.setTextColor(TFT_GREEN, TFT_BLACK);
-  dtostrf(UART.data.avgInputCurrent, 2, 0, fmt);
+  dtostrf(UART.data.avgInputCurrent, 3, 0, fmt);
   Data7.print(fmt);
 
   tft.setCursor(215, 235);
@@ -333,7 +333,7 @@ void loop() {
   tft.setFreeFont(DATAFONTSMALL);
 
   Data9.setTextColor(TFT_WHITE, TFT_BLACK);
-  dtostrf(total_km, 3, 1, fmt);
+  dtostrf(total_km, 4, 0, fmt);
   Data9.print(fmt);
 
   tft.setCursor(135, 235);
